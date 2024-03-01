@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>uutisetsijä</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Uutis etsijä</h1>
+
+        <div class="selectionContainer">
+            <label for="category">Valitse kategoria :</label>
+            <select id="category">
+                <option value="business">Business</option>
+                <option value="entertainment">Viihde</option>
+                <option value="general">Normaali</option>
+                <option value="health">Terveys</option>
+                <option value="science">Tiede</option>
+                <option value="sports">Urheilu</option>
+                <option value="technology">Teknologia</option>
+            </select>
+            <button id="fetchCategory">Etsi uutisia</button>
+        </div>
+
+        <div class="searchContainer">
+            <input type="text" id="searchKeyword" placeholder="Hae sanoilla">
+            <button onclick="fetchNews(true)">Hae</button>
+        </div>
+        <div id="newsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
